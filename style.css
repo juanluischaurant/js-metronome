@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+	background: rgb(29, 29, 29);
+    font-family: 'Open Sans', sans-serif;
+    color: #525252;
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.metronome {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+	background: rgb(11, 11, 11);
+    /* border: 1px solid #000; */
+	border-radius: 15px;
+    height: 250px;
+    justify-content: space-between;
+	align-items: center;
+	padding: 25px;
+	
+	box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
+	0 2px 4px rgba(0,0,0,0.07), 
+	0 4px 8px rgba(0,0,0,0.07), 
+	0 8px 16px rgba(0,0,0,0.07),
+	0 16px 32px rgba(0,0,0,0.07), 
+	0 32px 64px rgba(0,0,0,0.07);
+
+}
+
+.bpm-display {
+	/* display: flex; */
+	/* flex-direction: row; */
+	width: 200px;
+	text-align: center;
+	color: rgb(1, 210, 242);
+	font-weight: 800;
+	width: 100%;
+}
+.bpm-display .tempo {
+	font-size: 4em;
+}
+.bpm-display .bpm {
+
+}
+.bpm-display .tempo-text {
+	font-weight: 100;
+	font-size: .90rem;
+}
+
+.tempo-settings {
+	display: flex;
+	flex-direction: row;
+}
+
+.adjust-tempo {
+	color: #fff;
+	font-size: 1rem;
+	font-weight: 800;
+	border-radius: 50%;
+	text-align: center;
+	cursor: pointer;
+	width: 25px;
+	height: 25px;
+	background: rgb(29, 29, 29);
+}
+
+.decrease-tempo {
+
+}
+
+.start-stop {
+	cursor: pointer;
+	background: rgb(29, 29, 29);
+	padding: 5px 10px;
+	border-radius: 5px;
+	color: rgb(233,233,233);
+}
+
+.measures {
+	display: flex;
+	font-size: 1.2rem;
+}
+.measure-count {
+	margin: 0 15px;
+}
+.stepper {
+	cursor: pointer;
+}
+
