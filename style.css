@@ -1,43 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap');
 
 * {
-    padding: 0;
-    margin: 0;
+	padding: 0;
+	margin: 0;
 }
 
 body {
 	background: rgb(29, 29, 29);
-    font-family: 'Open Sans', sans-serif;
-    color: #525252;
-
+	font-family: 'Open Sans', sans-serif;
+	color: #525252;
 }
 
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
 }
 
 .metronome {
-    display: flex;
-    flex-direction: column;
-    width: 300px;
+	display: flex;
+	flex-direction: column;
+	width: 300px;
 	background: rgb(11, 11, 11);
-    /* border: 1px solid #000; */
+	/* border: 1px solid #000; */
 	border-radius: 15px;
-    height: 250px;
-    justify-content: space-between;
+	height: 250px;
+	justify-content: space-between;
 	align-items: center;
 	padding: 25px;
-	
-	box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
-	0 2px 4px rgba(0,0,0,0.07), 
-	0 4px 8px rgba(0,0,0,0.07), 
-	0 8px 16px rgba(0,0,0,0.07),
-	0 16px 32px rgba(0,0,0,0.07), 
-	0 32px 64px rgba(0,0,0,0.07);
 
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07),
+		0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07),
+		0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
 }
 
 .bpm-display {
@@ -53,16 +48,16 @@ body {
 	font-size: 4em;
 }
 .bpm-display .bpm {
-
 }
 .bpm-display .tempo-text {
 	font-weight: 100;
-	font-size: .90rem;
+	font-size: 0.9rem;
 }
 
 .tempo-settings {
 	display: flex;
 	flex-direction: row;
+	align-items: center;
 }
 
 .adjust-tempo {
@@ -76,17 +71,16 @@ body {
 	height: 25px;
 	background: rgb(29, 29, 29);
 }
-
+/* 
 .decrease-tempo {
-
-}
+} */
 
 .start-stop {
 	cursor: pointer;
 	background: rgb(29, 29, 29);
 	padding: 5px 10px;
 	border-radius: 5px;
-	color: rgb(233,233,233);
+	color: rgb(233, 233, 233);
 }
 
 .measures {
@@ -100,3 +94,15 @@ body {
 	cursor: pointer;
 }
 
+input[type='range'] {
+	-webkit-appearance: none;
+	height: 5px;
+}
+
+input[type='range']::-moz-range-thumb {
+	border: none;
+	height: 16px;
+	width: 16px;
+	border-radius: 50%;
+	background: rgb(11, 107, 122);
+}
